@@ -1,0 +1,855 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "accelerator": "GPU",
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "10702d1a782d4c97a61c4c51255d43e8": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_d39e95a143624414b0c47647b5344bed",
+              "IPY_MODEL_4c9f18f2736c40d79f6d21e5f5c5ebfd",
+              "IPY_MODEL_b6ea9740e4a34ad88d65687d5c524f07"
+            ],
+            "layout": "IPY_MODEL_1a4e5ef1e6c04e0a8e9032a2af11b224"
+          }
+        },
+        "d39e95a143624414b0c47647b5344bed": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_43098506f539466191c32bc64532ce96",
+            "placeholder": "​",
+            "style": "IPY_MODEL_0d1c77e51e6f47878c74d4e05105af6c",
+            "value": "model.safetensors: 100%"
+          }
+        },
+        "4c9f18f2736c40d79f6d21e5f5c5ebfd": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_77c818fe4b7f4a68ba5c288ac719f1e6",
+            "max": 438192852,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_e0466a6e345e41c59eedc34ae735d991",
+            "value": 438192852
+          }
+        },
+        "b6ea9740e4a34ad88d65687d5c524f07": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_bab66b68afae4acd9e249d48add84079",
+            "placeholder": "​",
+            "style": "IPY_MODEL_e66bc1e793b848a3a2d34400b8724b4b",
+            "value": " 438M/438M [00:02&lt;00:00, 157MB/s]"
+          }
+        },
+        "1a4e5ef1e6c04e0a8e9032a2af11b224": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "43098506f539466191c32bc64532ce96": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "0d1c77e51e6f47878c74d4e05105af6c": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "77c818fe4b7f4a68ba5c288ac719f1e6": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "e0466a6e345e41c59eedc34ae735d991": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "bab66b68afae4acd9e249d48add84079": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "e66bc1e793b848a3a2d34400b8724b4b": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Jang-Uk-5362/data-science/blob/main/%20Convert%20sentences%20to%20vectors%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8oaGGhdmYKqt"
+      },
+      "source": [
+        "# 패키지 설치\n",
+        "pip 명령어로 의존성 있는 패키지를 설치합니다.\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "t8TJkXkpDnSq"
+      },
+      "source": [
+        "!pip install ratsnlp"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Convert sentences to vectors"
+      ],
+      "metadata": {
+        "id": "KTyFhIkEphHR"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TFt_JLYoTKA6"
+      },
+      "source": [
+        "## 토크나이저 초기화\n",
+        "\n",
+        "BERT(`kcbert-base`) 모델이 쓰는 토크나이저를 선언합니다."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "bThW-2OrTHZW"
+      },
+      "source": [
+        "# kcbert-bacs 토크나이저 선언\n",
+        "from transformers import BertTokenizer\n",
+        "tokenizer = BertTokenizer.from_pretrained(\n",
+        "    \"beomi/kcbert-base\",\n",
+        "    do_lower_case=False,\n",
+        ")"
+      ],
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "K0NCnzpRTdnJ"
+      },
+      "source": [
+        "## 모델 초기화\n",
+        "\n",
+        "BERT(`kcbert-base`) 모델을 읽어들입니다."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FSVDbnFUTiXx",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 123,
+          "referenced_widgets": [
+            "10702d1a782d4c97a61c4c51255d43e8",
+            "d39e95a143624414b0c47647b5344bed",
+            "4c9f18f2736c40d79f6d21e5f5c5ebfd",
+            "b6ea9740e4a34ad88d65687d5c524f07",
+            "1a4e5ef1e6c04e0a8e9032a2af11b224",
+            "43098506f539466191c32bc64532ce96",
+            "0d1c77e51e6f47878c74d4e05105af6c",
+            "77c818fe4b7f4a68ba5c288ac719f1e6",
+            "e0466a6e345e41c59eedc34ae735d991",
+            "bab66b68afae4acd9e249d48add84079",
+            "e66bc1e793b848a3a2d34400b8724b4b"
+          ]
+        },
+        "outputId": "1b977bbc-8f70-4bb1-8ab4-69c36f597073"
+      },
+      "source": [
+        "# 모델 초기화\n",
+        "# BERT 모델이 프리트레인 할 때 썻던 토크나이저를 그대로 사용해야 벡터 변환에 문제가 없다.\n",
+        "from transformers import BertConfig, BertModel\n",
+        "pretrained_model_config = BertConfig.from_pretrained(\n",
+        "    \"beomi/kcbert-base\"\n",
+        ")\n",
+        "model = BertModel.from_pretrained(\n",
+        "    \"beomi/kcbert-base\",\n",
+        "    config=pretrained_model_config,\n",
+        ")"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "model.safetensors:   0%|          | 0.00/438M [00:00<?, ?B/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "10702d1a782d4c97a61c4c51255d43e8"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "Some weights of the model checkpoint at beomi/kcbert-base were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias']\n",
+            "- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).\n",
+            "- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sWboOauTTyXp"
+      },
+      "source": [
+        "`pretrained_model_config`의 내용을 확인합니다."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "tup5LreLT4vE",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ccbebcce-0cf6-477e-e690-8731aaa86d71"
+      },
+      "source": [
+        "# 프리트레인 모델 내용 확인\n",
+        "pretrained_model_config"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "BertConfig {\n",
+              "  \"_name_or_path\": \"beomi/kcbert-base\",\n",
+              "  \"architectures\": [\n",
+              "    \"BertForMaskedLM\"\n",
+              "  ],\n",
+              "  \"attention_probs_dropout_prob\": 0.1,\n",
+              "  \"classifier_dropout\": null,\n",
+              "  \"directionality\": \"bidi\",\n",
+              "  \"hidden_act\": \"gelu\",\n",
+              "  \"hidden_dropout_prob\": 0.1,\n",
+              "  \"hidden_size\": 768,\n",
+              "  \"initializer_range\": 0.02,\n",
+              "  \"intermediate_size\": 3072,\n",
+              "  \"layer_norm_eps\": 1e-12,\n",
+              "  \"max_position_embeddings\": 300,\n",
+              "  \"model_type\": \"bert\",\n",
+              "  \"num_attention_heads\": 12,\n",
+              "  \"num_hidden_layers\": 12,\n",
+              "  \"pad_token_id\": 0,\n",
+              "  \"pooler_fc_size\": 768,\n",
+              "  \"pooler_num_attention_heads\": 12,\n",
+              "  \"pooler_num_fc_layers\": 3,\n",
+              "  \"pooler_size_per_head\": 128,\n",
+              "  \"pooler_type\": \"first_token_transform\",\n",
+              "  \"position_embedding_type\": \"absolute\",\n",
+              "  \"transformers_version\": \"4.28.1\",\n",
+              "  \"type_vocab_size\": 2,\n",
+              "  \"use_cache\": true,\n",
+              "  \"vocab_size\": 30000\n",
+              "}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8Y2JYqRGUFll"
+      },
+      "source": [
+        "## 모델 입력값 만들기\n",
+        "\n",
+        "문장 2개를 모델 입력값으로 만들어보겠습니다."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "9Rk2Ga65USFb"
+      },
+      "source": [
+        "# BERT 모델의 입력값을 만든다.\n",
+        "sentences = [\"안녕하세요\", \"하이!\"]\n",
+        "features = tokenizer(\n",
+        "    sentences,\n",
+        "    max_length=10,\n",
+        "    padding=\"max_length\",\n",
+        "    truncation=True,\n",
+        ")"
+      ],
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wLq1JRVJUb7U"
+      },
+      "source": [
+        "`features`의 내용을 확인합니다.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XZl8OKdsVIQg",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1123d524-28d3-48a2-8c6f-184153628b64"
+      },
+      "source": [
+        "features.keys()"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LzkJ31vQVbjl",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5117bff5-6f3c-410d-bcc1-46707a2a8b9e"
+      },
+      "source": [
+        "features['input_ids']\n",
+        "# 문장 맨앞에 2, 문장 마지막에 3 : 스페셜 토큰"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[[2, 19017, 8482, 3, 0, 0, 0, 0, 0, 0], [2, 15830, 5, 3, 0, 0, 0, 0, 0, 0]]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Lc_71OjafQgS",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "559d379e-d892-4895-c9b5-a1befe4d7a06"
+      },
+      "source": [
+        "features['attention_mask']\n",
+        "# 패딩이 아닌 토큰 : 1 , 일반 토큰 : 0  => 실제 토큰이 자리하는지 정보를 확인"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[[1, 1, 1, 1, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0]]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Fdv1TGOHfQpm",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e9c06965-739a-4860-9aab-41723308254f"
+      },
+      "source": [
+        "features['token_type_ids']"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wR-3V6zIVsPp"
+      },
+      "source": [
+        "## BERT 임베딩 추출\n",
+        "\n",
+        "위에서 만든 `features`를 파이토치 텐서(tensor)로 변환합니다."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FdvUPuJoV3w3"
+      },
+      "source": [
+        "# features를 torch tensor로 변환\n",
+        "import torch\n",
+        "features = {k: torch.tensor(v) for k, v in features.items()}"
+      ],
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "W0S2EbdkWIdq"
+      },
+      "source": [
+        "BERT 모델에 `features`를 입력해 계산합니다."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YOWkywHaWOL6"
+      },
+      "source": [
+        "outputs = model(**features)"
+      ],
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Fog_9z0SqHog"
+      },
+      "source": [
+        "BERT 마지막 레이어의 단어 수준 벡터들을 확인합니다."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-wRQNlJMqMjh",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e8a77028-10b5-4352-ced3-b9d68645be08"
+      },
+      "source": [
+        "outputs.last_hidden_state"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "tensor([[[-0.6969, -0.8248,  1.7512,  ..., -0.3732,  0.7399,  1.1907],\n",
+              "         [-1.4803, -0.4398,  0.9444,  ..., -0.7405, -0.0211,  1.3064],\n",
+              "         [-1.4299, -0.5033, -0.2069,  ...,  0.1285, -0.2611,  1.6057],\n",
+              "         ...,\n",
+              "         [-1.4406,  0.3431,  1.4043,  ..., -0.0565,  0.8450, -0.2170],\n",
+              "         [-1.3625, -0.2404,  1.1757,  ...,  0.8876, -0.1054,  0.0734],\n",
+              "         [-1.4244,  0.1518,  1.2920,  ...,  0.0245,  0.7572,  0.0080]],\n",
+              "\n",
+              "        [[ 0.9371, -1.4749,  1.7351,  ..., -0.3426,  0.8050,  0.4031],\n",
+              "         [ 1.6095, -1.7269,  2.7936,  ...,  0.3100, -0.4787, -1.2491],\n",
+              "         [ 0.4861, -0.4569,  0.5712,  ..., -0.1769,  1.1253, -0.2756],\n",
+              "         ...,\n",
+              "         [ 1.2362, -0.6181,  2.0906,  ...,  1.3677,  0.8132, -0.2742],\n",
+              "         [ 0.5409, -0.9652,  1.6237,  ...,  1.2395,  0.9185,  0.1782],\n",
+              "         [ 1.9001, -0.5859,  3.0156,  ...,  1.4967,  0.1924, -0.4448]]],\n",
+              "       grad_fn=<NativeLayerNormBackward0>)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "AwDi0WNdrG7r"
+      },
+      "source": [
+        "BERT 마지막 레이어의 문서 수준 벡터를 확인합니다."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "0FQ1nayZrLQl",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "31f795b9-13bd-464b-f388-66a2d627af69"
+      },
+      "source": [
+        "outputs.pooler_output"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "tensor([[-0.1594,  0.0547,  0.1101,  ...,  0.2684,  0.1596, -0.9828],\n",
+              "        [-0.9221,  0.2969, -0.0110,  ...,  0.4291,  0.0311, -0.9955]],\n",
+              "       grad_fn=<TanhBackward0>)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "4eC4L9VppanB"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
